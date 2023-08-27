@@ -55,6 +55,11 @@ p {
   color: #000000;
   text-transform: uppercase;
   display: block;
+  border: 2px solid transparent;
+}
+
+.menu a:hover {
+  border: 2px solid #e21;
 }
 
 .conteudo {
@@ -74,11 +79,12 @@ p {
   justify-items: end;
 }
 
-.introducao h1{
+.introducao h1 {
   font-size: 2rem;
 }
 
-.detalhe {
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
   background: #e21;
@@ -93,6 +99,9 @@ p {
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
+}
+.botao:hover {
+  background-color: #900;
 }
 
 .subtitulo {
@@ -115,6 +124,15 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.vantagens-item:hover {
+  border-left: #e21;
+}
+
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
 }
 
 .vantagens-item p {
